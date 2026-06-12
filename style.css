@@ -717,13 +717,14 @@ ul { list-style: none; }
 }
 
 .involved-card--featured {
-  background: linear-gradient(145deg, var(--navy) 0%, var(--navy-mid) 100%);
-  border-color: transparent;
-  color: var(--white);
+  /* Match other involved cards for consistent sponsorship styling */
+  background: var(--gray-bg);
+  border: 1px solid var(--gray-line);
+  color: var(--navy);
 }
 .involved-card--featured h3,
-.involved-card--featured p { color: var(--white); }
-.involved-card--featured p { color: rgba(255,255,255,0.75); }
+.involved-card--featured p { color: var(--navy); }
+.involved-card--featured p { color: var(--gray-text); }
 
 .involved-num {
   font-family: var(--font-display);
@@ -824,6 +825,13 @@ ul { list-style: none; }
   color: var(--gray-text);
   font-style: italic;
 }
+
+  /* Coming soon state for socials */
+  .social-link.coming-soon,
+  .coming-soon {
+    opacity: 0.75;
+    pointer-events: none;
+  }
 
 /* Contact Form */
 .contact-form-wrap {
