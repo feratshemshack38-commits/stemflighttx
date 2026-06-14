@@ -717,14 +717,34 @@ ul { list-style: none; }
 }
 
 .involved-card--featured {
-  /* Match other involved cards for consistent sponsorship styling */
-  background: var(--gray-bg);
+  background: #f5f7fb;
   border: 1px solid var(--gray-line);
   color: var(--navy);
 }
-.involved-card--featured h3,
-.involved-card--featured p { color: var(--navy); }
-.involved-card--featured p { color: var(--gray-text); }
+.involved-card--featured h3 { color: var(--navy); }
+.involved-card--featured p,
+.involved-card--featured .coming-soon-tag { color: var(--gray-text); }
+.involved-card--featured .btn-outline {
+  color: var(--navy);
+  border-color: var(--gray-line);
+  background: transparent;
+}
+
+/* Make sponsor CTA match site buttons but slightly smaller */
+.involved-card--featured .btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
+.involved-card--featured .btn-primary:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(58,123,213,0.18);
+}
 
 .involved-num {
   font-family: var(--font-display);
@@ -735,7 +755,14 @@ ul { list-style: none; }
 }
 .involved-card--featured .involved-num { color: var(--blue-light); }
 
-.involved-icon { font-size: 2.2rem; }
+.involved-icon {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.involved-icon svg {
+  width: 100%;
+  height: 100%;
+}
 
 .involved-card h3 {
   font-family: var(--font-display);
