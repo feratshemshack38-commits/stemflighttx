@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — STEM Flight TX</title>
+  <title>Impact — STEM Flight TX</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -19,11 +19,11 @@
       <nav class="nav-links" id="nav-links" aria-label="Main navigation">
         <a href="about.html">About</a>
         <a href="programs.html">Programs</a>
-        <a href="impact.html">Impact</a>
+        <a href="impact.html" class="active">Impact</a>
         <a href="gallery.html">Gallery</a>
         <a href="why-drones.html">Why Drones?</a>
         <a href="get-involved.html">Get Involved</a>
-        <a href="contact.html" class="nav-cta active">Contact</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -32,19 +32,31 @@
   </header>
 
   <main>
-    <section class="section contact page-top">
+    <section class="section impact page-top">
       <div class="container">
-        <div class="section-label fade-up">Reach Out</div>
-        <h1 class="section-title fade-up">Contact Us</h1>
-        <p class="section-intro fade-up">We'd love to hear from you. For now, please email us directly:</p>
-        <div class="contact-form-wrap fade-up">
-          <div class="contact-block-icon" style="width:2rem;height:2rem;color:var(--blue);margin-bottom:12px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16v12H4z"/><polyline points="4,6 12,13 20,6"/></svg>
+        <div class="section-label fade-up">By the Numbers</div>
+        <h1 class="section-title fade-up">Our Impact</h1>
+        <div class="impact-grid">
+          <div class="impact-card fade-up">
+            <div class="impact-number" data-target="21">0</div>
+            <div class="impact-label">Students Reached</div>
+            <div class="impact-desc">And growing with every new cohort</div>
           </div>
-          <h3>Email</h3>
-          <p style="font-weight:600;color:var(--navy);font-size:1.1rem;">contact@stemflighttx.org</p>
-          <p style="margin-top:12px;color:var(--gray-text);">If you'd like sponsorship information, volunteer details, or to bring a program to your school, please include a brief message and we'll follow up.</p>
-          <p style="margin-top:24px;"><a href="index.html" class="btn btn-primary btn-sm">Back to Home</a></p>
+          <div class="impact-card fade-up">
+            <div class="impact-number" data-target="6">0</div>
+            <div class="impact-label">Training Drones</div>
+            <div class="impact-desc">Ready to fly in every session</div>
+          </div>
+          <div class="impact-card fade-up">
+            <div class="impact-number" data-target="4">0</div>
+            <div class="impact-label">Week Program</div>
+            <div class="impact-desc">Intensive, structured, hands-on</div>
+          </div>
+          <div class="impact-card fade-up">
+            <div class="impact-number" data-suffix="%">100</div>
+            <div class="impact-label">Hands-On Learning</div>
+            <div class="impact-desc">No passive lectures — only doing</div>
+          </div>
         </div>
       </div>
     </section>
